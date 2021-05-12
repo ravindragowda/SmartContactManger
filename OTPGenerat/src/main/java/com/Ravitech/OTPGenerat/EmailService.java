@@ -23,7 +23,7 @@ public class EmailService
 		  helper.setTo(to);
          helper.setSubject(subject);
 	       helper.setText(message, true);
-
+System.out.println("Email service has fallows ");
 	        javaMailSender.send(msg);
    }
 }

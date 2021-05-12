@@ -43,7 +43,8 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter
 	public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception 
 	{
 	   BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder(); 
-	   auth.userDetailsService(usersService).passwordEncoder(passwordEncoder);;
+	   auth.userDetailsService(usersService).passwordEncoder(passwordEncoder);
+	   System.out.println("The Configure Global details has fallows");
 	}
 
 	      @Bean
